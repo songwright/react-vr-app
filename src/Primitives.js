@@ -5,12 +5,13 @@ export default class App extends React.Component {
   render() {
     return (
       <View>
-        <Box
-          dimWidth={2}
-          dimDepth={2}
-          dimHeight={1}
+        <Cylinder
+          radiusTop={0.5}
+          radiusBottom={0.5}
+          dimHeight={0.5}
+          segments={12}
           style={{
-            color: 'red'
+            transform: [{translate: [-0.5, 2, -5]}]
           }}
         />
       </View>
