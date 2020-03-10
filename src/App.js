@@ -10,7 +10,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View>
-        <Pano source={asset('chess-world.jpg')}/>
+        <Pano source={asset('background.jpeg')}/>
         <Text
           style={{
             backgroundColor: '#777879',
