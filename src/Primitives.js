@@ -9,6 +9,9 @@ export default class App extends React.Component {
           dimWidth={2}
           dimDepth={2}
           dimHeight={1}
+          style={{
+            color: 'red'
+          }}
         />
       </View>
     );
