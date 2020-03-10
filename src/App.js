@@ -22,6 +22,7 @@ export default class App extends React.Component {
           }}>
           Hello!
         </Text>
+        <Primitives />
       </View>
     );
   }
