@@ -4,8 +4,20 @@ import { asset, Pano, Text, View, AmbientLight, Sound, VrButton } from 'react-vr
 import Penholder from './Penholder';
 
 export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      background: 'background.jpeg',
+      sound: 'office.wav',
+      visible: true
+    }
+  }
   changeScene() {
-    console.log("It was clicked.");
+    this.setState({
+      background: 'outside.jpeg',
+      sound: 'birds.wav',
+      visible: false
+    })
   }
   render() {
     return (
