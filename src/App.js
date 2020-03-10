@@ -1,6 +1,6 @@
 import React from 'react';
 import { asset, Pano, Text, View, AmbientLight } from 'react-vr';
-import Primitives from './Primitives';
+// import Primitives from './Primitives';
 
 export default class App extends React.Component {
   render() {
@@ -22,7 +22,6 @@ export default class App extends React.Component {
           }}>
           Hello!
         </Text>
-        <Primitives />
       </View>
     );
   }
