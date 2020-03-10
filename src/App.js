@@ -28,12 +28,12 @@ export default class App extends React.Component {
     return (
       <View>
         <AmbientLight intensity={2.5} />
-        <Pano source={asset('background.jpeg')} />
+        <Pano source={asset(this.state.background)} />
         <Sound
           loop={true}
           volume={0.7}
           source={{
-            wav: asset('office.wav')
+            wav: asset(this.state.sound)
           }}
         />
         <VrButton onClick={this.changeScene}>
