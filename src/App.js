@@ -19,6 +19,11 @@ export default class App extends React.Component {
       visible: false
     })
   }
+  renderItems() {
+    if (this.state.visible === true) {
+      return <Penholder />
+    }
+  }
   render() {
     return (
       <View>
@@ -47,7 +52,7 @@ export default class App extends React.Component {
             My office
           </Text>
         </VrButton>
-        <Penholder />
+        {this.renderItems}
       </View>
     );
   }
