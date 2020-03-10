@@ -10,14 +10,14 @@ export default class App extends React.Component {
       background: 'background.jpeg',
       sound: 'office.wav',
       visible: true
-    }
+    };
   }
   changeScene() {
     this.setState({
       background: 'outside.jpeg',
       sound: 'birds.wav',
       visible: false
-    })
+    });
   }
   renderItems() {
     if (this.state.visible === true) {
@@ -36,7 +36,7 @@ export default class App extends React.Component {
             wav: asset(this.state.sound)
           }}
         />
-        <VrButton onClick={this.changeScene}>
+        <VrButton onClick={this.changeScene.bind(this)}>
           <Text
             style={{
               backgroundColor: '#777879',
@@ -52,7 +52,7 @@ export default class App extends React.Component {
             My office
           </Text>
         </VrButton>
-        {this.renderItems}
+        {this.renderItems()}
       </View>
     );
   }
