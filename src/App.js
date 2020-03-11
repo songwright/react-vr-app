@@ -8,7 +8,7 @@ export default class App extends React.Component {
     super(props);
     this.state = {
       background: 'background.jpeg',
-      sound: 'office.mp3',
+      sound: 'office.wav',
       visible: true
     };
   }
